@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8360a8a438.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sideMenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onClick="closeMenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Website Designer</p>
+                <h1>Hi, I'm <span>Lakshit</span><br> Upadhaya From Nepal</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About  -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I'm lakshit paudel, a residence from kathmandu Nepal. I would like to introduce myself as a hardworking and self-motivated individual who is passionate about his career from the very core. And since my childhood, I have been interested in Technology.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                        <p class="tab-links" onclick="openTab('achievements')">Achievements</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Website Development</li>
+                            <li><span>Graphics Designing</span><br>Photo Manuplations and Designing</li>
+                            <li><span>App Development</span><br>Building Simple Apps with C programming</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019</span><br>SEE from Maha Manjushreee Higher Secondary School</li>
+                            <li><span>2021</span><br>10+2 from NCCS Secondary School</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="achievements">
+                        <ul>
+                            <li><span>Table Tennis</span><br>Gold medalist</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- doggo -->
+    <div id="doggo">
+        <div class="container">
+            <h1 class="sub-title">Meet My Dog</h1>
+            <p style="margin-top: 10px;">Hello! his name is OREO. My parents and I named him oreo because he's white and black in colour. OREO loves to go outside on a walk. And oreo always gets jealous whenever i go outside to play with my neighbors dog JIMMY. OREO gets a bit jealous but he is a good dog.
+            </p>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="images/doggo-1.jpg" style="width:100%">
+                  <div class="text">Caption Text</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="images/doggo-2.jpg" style="width:100%">
+                  <div class="text">Caption Two</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="images/doggo-3.jpg" style="width:100%">
+                  <div class="text">Caption Three</div>
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolorum ab, suscipit expedita recusandae optio ratione dolor similique neque aut facilis voluptatem. Quasi debitis consectetur accusamus non quod laborum? Corporis.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Graphic Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolorum ab, suscipit expedita recusandae optio ratione dolor similique neque aut facilis voluptatem. Quasi debitis consectetur accusamus non quod laborum? Corporis.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-camera"></i>
+                    <h2>Photo Editing</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolorum ab, suscipit expedita recusandae optio ratione dolor similique neque aut facilis voluptatem. Quasi debitis consectetur accusamus non quod laborum? Corporis.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Spotify Playlist</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.jpg">
+                    <div class="layer">
+                        <h3>Tyler The Creator</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum vitae culpa repellendus facere maiores accusantium tempora?</p>
+                        <a href="https://open.spotify.com/artist/4V8LLVI7PbaPR0K2TGSxFF?si=lWIo9140RmuomVus-OdQPQ"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.jpg">
+                    <div class="layer">
+                        <h3>Frank Ocean</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <a href="https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM?si=tGR-KR9cR9y_VbyYNqtcow"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.jpg">
+                    <div class="layer">
+                        <h3>Kanye West</h3>
+                        <p>Lorem ipsum dolor,Minus exercitationem dolore blanditiis veniam adipisci voluptatem quam!</p>
+                        <a href="https://open.spotify.com/artist/5K4W6rqBFWDnAN6FQUkS6x?si=NrC29XD_S2eVCEEPwF5QLw"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://open.spotify.com/playlist/74vefgfJPhBZv364ca91b3?si=5a1fc15109774c1c" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+977 xxxxxxxxxx</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-reddit"></i></a>
+                    </div>
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d882.9495315137565!2d85.27272912920921!3d27.723518598924095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2797d5fa417bdc3e!2zMjfCsDQzJzI0LjciTiA4NcKwMTYnMjMuOCJF!5e0!3m2!1sen!2snp!4v1658992802644!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; CopyRight, Lakshit. All Rights Reserved.</p>
+        </div>
+    </div>
+    
+<script>
+
+    var tabLinks = document.getElementsByClassName("tab-links");
+    var tabContents = document.getElementsByClassName("tab-contents");
+
+    function openTab(tabName) {
+        for(tabLink of tabLinks) {
+            tabLink.classList.remove("active-link");
+        }
+        for(tabContent of tabContents) {
+            tabContent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabName).classList.add("active-tab")
+    }
+
+</script>
+
+<script>
+
+    var sideMenu = document.getElementById("sideMenu");
+
+    function openMenu() {
+        sideMenu.style.right = "0";
+    }
+
+    function closeMenu() {
+        sideMenu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+</script>
+
+</body>
+</html>
